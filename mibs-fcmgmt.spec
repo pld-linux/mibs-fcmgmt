@@ -15,6 +15,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 MIBs for Fibre Channel Management.
 
+NOTE: This is not fcMgmtMIB from RFC 4044 (mib-2 56), but unassigned by IANA
+(mib-2 8888).
+
 %prep
 %setup -qcT
 cp -a %{SOURCE0} FIBRE-CHANNEL-MGMT-MIB
